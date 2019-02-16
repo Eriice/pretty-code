@@ -1,0 +1,15 @@
+mat-card /deep/ {
+  
+  .mat-tab-body-content{
+    height: auto;
+  }
+
+  .mat-tab-body-wrapper mat-tab-body .mat-tab-body {
+    overflow-y: hidden;
+    background: red;
+  }
+
+  // mat-tab-body-content .fadeIn {
+  //   animation: opacity 2s ease-in;
+  // }
+}

@@ -1,0 +1,12 @@
+
+<div class="code-content">
+  <!-- For SnackBar Lazy loading https://github.com/akveo/nebular/issues/943 -->
+  <div style="display: none;">
+    <ng-content></ng-content>
+  </div>
+ 
+  <app-code-header *ngIf="config.header" [header]="config.header"></app-code-header>
+
+  <app-code-core [language]="config.language" [linenums]="config.linenums">
+  </app-code-core>
+</div>

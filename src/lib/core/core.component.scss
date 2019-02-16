@@ -1,0 +1,94 @@
+@import '../style/constants';
+
+/* PRETTY PRINTING STYLES for prettify.js. */
+
+.prettyprint {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: -7px;
+  right: -19px;
+  padding: 0;
+
+  color: $blue-grey-200;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: $mediumgray;
+  }
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums /deep/ {
+  margin: 0;
+  font-family: $main-font;
+  color: #B3B6B7;
+  li {
+    margin: 0;
+    font-family: $code-font;
+    font-size: 90%;
+    line-height: 24px;
+  }
+}
+
+pre {
+  display: flex;
+  min-height: 2rem;
+  margin: 1rem 1.5rem;
+  white-space: pre-wrap;
+  align-items: center;
+
+  code span {
+    line-height: 1.5rem;
+  }
+
+  &.lang-sh, &.lang-bash {
+    background-color: $darkgray;
+
+    /deep/ {
+      .pnk, .blk, .pln, .otl, .kwd, .typ, .tag, .str, .atv, .atn, .com, .lit, .pun, .dec {
+        color: $codegreen;
+      }
+    }
+  }
+}
+
+pre /deep/ {
+  /* The following class|color styles are derived from https://github.com/google/code-prettify/blob/master/src/prettify.css*/
+
+  /* SPAN elements with the classes below are added by prettyprint. */
+  .pln { color: #000 }  /* plain text */
+
+  @media screen {
+    .str { color: #800 }  /* string content */
+    .kwd { color: #00f }  /* a keyword */
+    .com { color: #060 }  /* a comment */
+    .typ { color: red }  /* a type name */
+    .lit { color: #08c }  /* a literal value */
+    /* punctuation, lisp open bracket, lisp close bracket */
+    .pun, .opn, .clo { color: #660 }
+    .tag { color: #008 }  /* a markup tag name */
+    .atn { color: #606 }  /* a markup attribute name */
+    .atv { color: #800 }  /* a markup attribute value */
+    .dec, .var { color: #606 }  /* a declaration; a variable name */
+    .fun { color: red }  /* a function name */
+  }
+
+  /* Use higher contrast and text-weight for printable form. */
+  @media print, projection {
+    .str { color: #060 }
+    .kwd { color: #006; font-weight: bold }
+    .com { color: #600; font-style: italic }
+    .typ { color: #404; font-weight: bold }
+    .lit { color: #044 }
+    .pun, .opn, .clo { color: #440 }
+    .tag { color: #006; font-weight: bold }
+    .atn { color: #404 }
+    .atv { color: #060 }
+  }
+}
+
+

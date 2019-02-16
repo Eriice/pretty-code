@@ -1,0 +1,14 @@
+<!-- Use content projection so that the provided HTML's code-panes can be split into tabs -->
+<mat-card>
+  <mat-tab-group class="code-tab-group" disableRipple>
+    <mat-tab style="overflow-y: hidden;" *ngFor="let config of configs">
+      <ng-template mat-tab-label>
+        <span>{{ config.header }}</span>
+      </ng-template>
+      <app-code-core
+        [language]="config.language"
+        [linenums]="config.linenums">
+      </app-code-core>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>

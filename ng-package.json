@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/pretty-code",
+  "lib": {
+    "entryFile": "src/public_api.ts"
+  },
+  "whitelistedNonPeerDependencies": [
+    "he",
+    "@angular/cdk",
+    "@angular/material",
+    "@angular/animations",
+    "code-prettify-google"
+  ]
+}
