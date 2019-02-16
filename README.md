@@ -22,7 +22,7 @@ import { PrettyCodeModule } from "@eriice/pretty-code";
 ```
 
 ```html
-<app-code-example [config]="configs[0]">
+<app-code-example [config]="config">
 </app-code-example>
 
 <app-code-tabs [configs]="configs"></app-code-tabs>
