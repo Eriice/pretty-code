@@ -1,6 +1,7 @@
 # pretty-code
 
 This module is an effort to implement highlight code block in Angular project.
+
 This module is seperated from the [Angular.io](https://angular.io/). I follow the source code in custom-elements/code part and packaged secondary. 
 
 * [License](#license)
@@ -19,7 +20,7 @@ This software is provided free of charge and without restriction under the [MIT 
 
 ## Installation
 
-Please make sure follow package has been introduced in your project cause this module is based on [Angular-Material](https://material.angular.io/guide/getting-started).
+Please make sure the follow packages have been introduced in your project cause this module is based on [Angular-Material](https://material.angular.io/guide/getting-started).
 
 ```
 @angular/cdk
@@ -59,15 +60,16 @@ Example Template
 ```
 
 // Input property
+
 | Property              | Type       | Default  | Description |
 | :-------------------- | :--------- | :------- | :---------- |
-| `config` | `Config`     | `null`   | Used to configure code block display including language header linenum and code.  |
+| `config` | `Config`     | `null`   | Used to configure code block display including language of code, header, linenum and the code block.  |
 
 ```typescript
 interface Config {
-  code: string|null;
-  language: string|null;
-  linenums: boolean | number |string;
-  header: string|null;
+  code: string| null;
+  language: string| null;
+  linenums: boolean| number| string;
+  header: string| null;
 }
 ```
