@@ -63,7 +63,7 @@ Input property
 
 | Property              | Type       | Default  | Description |
 | :-------------------- | :--------- | :------- | :---------- |
-| `config` | `Config`     | `null`   | Used to configure code block display including language of code, header, linenum and the code block.  |
+| `config` | `Config` | `null` | Used to configure code block display including language of code, header, linenum and the code block. |
 
 ```typescript
 interface Config {
