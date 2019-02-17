@@ -59,7 +59,7 @@ Example Template
 <app-code-tabs [config]="config"></app-code-tabs>
 ```
 
-// Input property
+Input property
 
 | Property              | Type       | Default  | Description |
 | :-------------------- | :--------- | :------- | :---------- |
