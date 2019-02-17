@@ -1,14 +1,42 @@
 # pretty-code
-Highlight your code in angular project. This project base on Angular.io.
 
+This module is an effort to implement highlight code block in Angular project.
+This module is seperated from the [Angular.io](https://angular.io/). I follow the source code in custom-elements/code part and packaged secondary. 
 
-## Install
+* [License](#license)
+* [Demo](#demo)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Change Log](CHANGELOG.md)
+
+## License
+
+This software is provided free of charge and without restriction under the [MIT License](LICENSE.md)
+
+## Demo
+
+![example](http://img.eriice.com/github-pretty-code-fig01.png)
+
+## Installation
+
+Please make sure follow package has been introduced in your project cause this module is based on [Angular-Material](https://material.angular.io/guide/getting-started).
+
+```
+@angular/cdk
+@angular/material
+@angular/animations
+```
+
+This package is installable through NPM.
 
 ```
 $ npm install @eriice/pretty-code --save
 ```
 
+
 ## Usage
+
+Example module
 
 ```typescript
 import { PrettyCodeModule } from "@eriice/pretty-code";
@@ -21,14 +49,19 @@ import { PrettyCodeModule } from "@eriice/pretty-code";
 })
 ```
 
+Example Template
 ```html
-<app-code-example [config]="config">
-</app-code-example>
+// single code block
+<app-code-example [config]="config"></app-code-example>
 
-<app-code-tabs [configs]="configs"></app-code-tabs>
+// multiple code block
+<app-code-tabs [config]="config"></app-code-tabs>
 ```
 
-the config of configs variable use follow below
+// Input property
+| Property              | Type       | Default  | Description |
+| :-------------------- | :--------- | :------- | :---------- |
+| `config` | `Config`     | `null`   | Used to configure code block display including language header linenum and code.  |
 
 ```typescript
 interface Config {
@@ -38,9 +71,3 @@ interface Config {
   header: string|null;
 }
 ```
-
-![example](http://img.eriice.com/github-pretty-code-fig01.png)
-
-
-
-
