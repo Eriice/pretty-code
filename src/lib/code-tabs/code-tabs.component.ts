@@ -20,7 +20,7 @@ import * as he from 'he'
 export class CodeTabsComponent implements OnInit {
   
   /** render component according to config  */
-  @Input() configs: Config[];
+  @Input() config: Config[];
 
   @Input() linenums: boolean | number |string;
 
@@ -33,7 +33,7 @@ export class CodeTabsComponent implements OnInit {
 
   ngAfterViewInit() {
     this.coreComponents.toArray().forEach((codeComponent, i) => {
-      codeComponent.code = he.encode(this.configs[i].code, {'encodeEverything': true});
+      codeComponent.code = he.encode(this.config[i].code, {'encodeEverything': true});
     });
   }
 }

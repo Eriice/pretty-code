@@ -133,7 +133,6 @@ export class CoreComponent implements OnInit {
 
     if (successfullyCopied) {
       this.logger.log('Copied code to clipboard:', code);
-      
       this.snackbar.open('Code Copied', '', { duration: 800 });
     } else {
       this.logger.error(new Error(`ERROR copying code to clipboard: "${code}"`));

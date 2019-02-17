@@ -1,7 +1,11 @@
 <!-- Use content projection so that the provided HTML's code-panes can be split into tabs -->
 <mat-card>
+  <!-- For SnackBar Lazy loading https://github.com/akveo/nebular/issues/943 -->
+  <div style="width: 0px; height: 0px; overflow: hidden;">
+    <ng-content select="nb-layout"></ng-content>
+  </div>
   <mat-tab-group class="code-tab-group" disableRipple>
-    <mat-tab style="overflow-y: hidden;" *ngFor="let config of configs">
+    <mat-tab style="overflow-y: hidden;" *ngFor="let config of config">
       <ng-template mat-tab-label>
         <span>{{ config.header }}</span>
       </ng-template>
