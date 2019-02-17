@@ -1,14 +1,14 @@
-# pretty-code
+# Pretty-code
 
 This module is an effort to implement highlight code block in Angular project.
 
 This module is seperated from the [Angular.io](https://angular.io/). I follow the source code in custom-elements/code part and packaged secondary. 
 
-* [License](#license)
-* [Demo](#demo)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Change Log](CHANGELOG.md)
+  * [License](#license)
+  * [Demo](#demo)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Change Log](CHANGELOG.md)
 
 ## License
 
