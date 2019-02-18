@@ -16,9 +16,14 @@ This software is provided free of charge and without restriction under the [MIT 
 
 ## Demo
 
+### single code block Example
+
 ![single code block Example](http://img.eriice.com/github-pretty-code-fig02.png)
 
+### Multiple code block Example
+
 ![Multiple code block Example](http://img.eriice.com/github-pretty-code-fig01.gif)
+
 ## Installation
 
 Please make sure the follow packages have been introduced in your project cause this module is based on [Angular-Material](https://material.angular.io/guide/getting-started).
