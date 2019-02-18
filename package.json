@@ -1,12 +1,17 @@
 {
   "name": "@eriice/pretty-code",
   "version": "0.0.16",
+  "scripts": {
+    "move": "npm version"
+  },
   "dependencies": {
     "code-prettify-google": "^1.0.1",
     "he": "^1.2.0"
   },
   "devDependencies": {
-    "@types/he": "^1.1.0"
+    "@types/he": "^1.1.0",
+    "gulp": "^4.0.0",
+    "gulp-run": "^1.7.1"
   },
   "peerDependencies": {
     "@angular/common": "^7.2.0",
