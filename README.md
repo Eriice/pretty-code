@@ -16,8 +16,9 @@ This software is provided free of charge and without restriction under the [MIT 
 
 ## Demo
 
-![example](http://img.eriice.com/github-pretty-code-fig01.png)
+![single code block Example](http://img.eriice.com/github-pretty-code-fig02.png)
 
+![Multiple code block Example](http://img.eriice.com/github-pretty-code-fig01.gif)
 ## Installation
 
 Please make sure the follow packages have been introduced in your project cause this module is based on [Angular-Material](https://material.angular.io/guide/getting-started).
@@ -32,6 +33,12 @@ This package is installable through NPM.
 
 ```
 $ npm install @eriice/pretty-code --save
+```
+
+Then find your project global scss file (default in `project/src/styles.scss`) and paste the following:
+
+```
+@import '~@eriice/pretty-code/ng-io-theme'
 ```
 
 
