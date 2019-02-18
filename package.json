@@ -1,6 +1,6 @@
 {
   "name": "@eriice/pretty-code",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "dependencies": {
     "code-prettify-google": "^1.0.1",
     "he": "^1.2.0"
