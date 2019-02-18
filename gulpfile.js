@@ -17,6 +17,6 @@ gulp.task('build:copy-styles', function () {
         .pipe(gulp.dest(distDir));
 });
 
-gulp.task('default', gulp.series(['build:angular-package', 'build:copy-styles', 'version'], function(){
+gulp.task('default', gulp.series(['version', 'build:angular-package', 'build:copy-styles'], function(){
   console.log('done')
 }))

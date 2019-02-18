@@ -1,9 +1,6 @@
 {
   "name": "@eriice/pretty-code",
   "version": "0.0.18",
-  "scripts": {
-    "move": "npm version"
-  },
   "dependencies": {
     "code-prettify-google": "^1.0.1",
     "he": "^1.2.0"
