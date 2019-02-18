@@ -1,9 +1,15 @@
 <pre class="prettyprint lang-{{language}}">
-  <button
+  <!-- <button
     class="material-icons copy-button"
     title="Copy code snippet"
     (click)="doCopy()">
     <span aria-hidden="true">c</span>
+  </button> -->
+  
+  <button class="copy-button"
+    title="Copy code snippet"
+    (click)="doCopy()">
+    <mat-icon svgIcon="copy"></mat-icon>
   </button>
   <code class="animated fadeIn" #codeContainer></code>
 </pre>

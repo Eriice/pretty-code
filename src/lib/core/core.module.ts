@@ -4,12 +4,20 @@ import { CoreComponent } from './core.component';
 import { PrettyPrinterService as PrettyPrinter } from "../service/pretty-printer.service";
 import { CopierService } from '../service/copier.service';
 import { LoggerService } from "../service/logger.service";
-import {MatButtonModule} from '@angular/material';
+
+// copy module
+import { MatButtonModule, MatIconModule } from '@angular/material';
+// import { MatIconRegistry } from "@angular/material";
+// import { DomSanitizer } from "@angular/platform-browser";
+
 @NgModule({
   declarations: [CoreComponent],
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
+    // MatIconRegistry,
+    // DomSanitizer
   ],
   exports: [
     CoreComponent

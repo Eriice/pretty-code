@@ -4,6 +4,11 @@ import { PrettyPrinterService } from "../service/pretty-printer.service";
 import { CopierService } from "../service/copier.service"
 import { MatSnackBar } from '@angular/material';
 
+import { MatIconRegistry } from "@angular/material";
+import { DomSanitizer } from "@angular/platform-browser";
+
+import { copySvg } from './copy.svg';
+
 /**
  * If linenums is not set, this is the default maximum number of lines that
  * an example can display without line numbers.
@@ -69,8 +74,12 @@ export class CoreComponent implements OnInit {
     private snackbar: MatSnackBar,
     private pretty: PrettyPrinterService,
     private copier: CopierService,
+    iconRegistry : MatIconRegistry,
+    sanitizer : DomSanitizer,
     private logger: LoggerService
-  ) { }
+  ) {
+    iconRegistry.addSvgIconLiteral('copy', sanitizer.bypassSecurityTrustHtml(copySvg));
+  }
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.

@@ -1,5 +1,7 @@
 mat-card /deep/ {
-  
+  padding: 0;
+  border-radius: 5px;
+
   .mat-tab-body-content{
     height: auto;
   }
